@@ -3,32 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kawaiimon — Mini aventure</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Kawaiimon</title>
+    <style>html,body,#app{margin:0;height:100%;background:#120412}</style>
   </head>
   <body>
-    <main class="app">
-      <header class="panel">
-        <h1>🌸 Kawaiimon</h1>
-        <p>Attrape un maximum de Kawaiimon avant la fin du temps.</p>
-      </header>
-
-      <section class="hud panel" aria-label="Statistiques de partie">
-        <p>Score: <strong id="score">0</strong></p>
-        <p>Temps: <strong id="time">30</strong>s</p>
-        <button id="startBtn" type="button">Démarrer</button>
-      </section>
-
-      <section class="arena panel" id="arena" aria-label="Zone de jeu">
-        <p class="placeholder">Appuie sur « Démarrer » pour lancer la chasse ✨</p>
-      </section>
-
-      <section class="panel log" aria-live="polite">
-        <h2>Journal</h2>
-        <p id="message">Bienvenue dresseur·euse !</p>
-      </section>
-    </main>
-
-    <script src="game.js"></script>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
