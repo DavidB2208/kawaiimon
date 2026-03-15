@@ -4,45 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kawaiimon</title>
-    <style>
-      html, body, #app {
-        margin: 0;
-        height: 100%;
-        background: #120412;
-        color: #ffe6fa;
-        font-family: monospace;
-      }
-      #boot-message {
-        position: fixed;
-        inset: 0;
-        display: grid;
-        place-content: center;
-        text-align: center;
-        gap: 10px;
-        background: #120412;
-        z-index: 5;
-        padding: 24px;
-      }
-      #boot-message.hidden {
-        display: none;
-      }
-      #boot-message .title {
-        font-size: 28px;
-        color: #ff9fe3;
-      }
-      #boot-message .hint {
-        font-size: 16px;
-        opacity: 0.95;
-      }
-    </style>
+    <style>html,body,#app{margin:0;height:100%;background:#120412}</style>
   </head>
   <body>
     <div id="app"></div>
-    <div id="boot-message" role="status" aria-live="polite">
-      <div class="title">Kawaiimon – Love Arena</div>
-      <div class="hint">Chargement du jeu…</div>
-      <div class="hint">Si cet écran reste vide: lance avec <b>npm install</b> puis <b>npm run dev</b>.</div>
-    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
